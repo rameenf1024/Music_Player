@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <audio src="" id="audio"></audio>
+    <div class="music-player">
+        <h1 class="music-name">song one</h1>
+        <p class="artist-name">artist</p>
+
+        <div class="disk "></div>
+
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class=" btn backward-btn"><i class=' bx bx-skip-previous-circle bx-lg'></i></button>
+            <button class="play-btn pause ">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn forward-btn"><i class='bx bx-skip-next-circle bx-lg'></i></button>
+        </div>
+    </div>
+    
+
+
+    <script src="music_data.js"></script>
+    <script src="music.js"></script>
+</body>
+</html>
